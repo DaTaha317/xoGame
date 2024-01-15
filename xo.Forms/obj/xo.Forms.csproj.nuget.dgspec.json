@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xoGame\\xo.Forms\\xo.Forms.csproj": {}
+    "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xo.Forms\\xo.Forms.csproj": {}
   },
   "projects": {
-    "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xoGame\\xo.Forms\\xo.Forms.csproj": {
+    "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xo.Forms\\xo.Forms.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xoGame\\xo.Forms\\xo.Forms.csproj",
+        "projectUniqueName": "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xo.Forms\\xo.Forms.csproj",
         "projectName": "xo.Forms",
-        "projectPath": "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xoGame\\xo.Forms\\xo.Forms.csproj",
+        "projectPath": "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xo.Forms\\xo.Forms.csproj",
         "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xoGame\\xo.Forms\\obj\\",
+        "outputPath": "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xo.Forms\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",

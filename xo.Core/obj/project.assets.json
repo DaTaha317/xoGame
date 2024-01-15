@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xoGame\\xo.Core\\xo.Core.csproj",
+      "projectUniqueName": "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xo.Core\\xo.Core.csproj",
       "projectName": "xo.Core",
-      "projectPath": "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xoGame\\xo.Core\\xo.Core.csproj",
+      "projectPath": "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xo.Core\\xo.Core.csproj",
       "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-      "outputPath": "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xoGame\\xo.Core\\obj\\",
+      "outputPath": "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xo.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",

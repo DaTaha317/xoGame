@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xoGame\\xo.Data\\xo.Data.csproj": {}
+    "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xo.Data\\xo.Data.csproj": {}
   },
   "projects": {
-    "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xoGame\\xo.Data\\xo.Data.csproj": {
+    "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xo.Data\\xo.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xoGame\\xo.Data\\xo.Data.csproj",
+        "projectUniqueName": "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xo.Data\\xo.Data.csproj",
         "projectName": "xo.Data",
-        "projectPath": "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xoGame\\xo.Data\\xo.Data.csproj",
+        "projectPath": "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xo.Data\\xo.Data.csproj",
         "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xoGame\\xo.Data\\obj\\",
+        "outputPath": "D:\\ITI Benha\\10. Advanced C#\\xoGame\\xo.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
