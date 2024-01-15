@@ -1,20 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
+﻿
 namespace xo.Forms
 {
     public partial class SinglePlayerForm : Form
     {
-        public SinglePlayerForm()
+        private MainForm parentForm;
+        public SinglePlayerForm(MainForm parentForm)
         {
             InitializeComponent();
+            this.parentForm = parentForm;
+        }
+
+        private void btn_start_single_game_Click(object sender, EventArgs e)
+        {
+            parentForm.openChildForm(new GameBoard());
         }
     }
 }

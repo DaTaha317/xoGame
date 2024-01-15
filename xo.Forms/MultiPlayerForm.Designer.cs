@@ -166,6 +166,7 @@
             btn_start_multi_game.TabIndex = 5;
             btn_start_multi_game.Text = "Start Game";
             btn_start_multi_game.UseVisualStyleBackColor = false;
+            btn_start_multi_game.Click += btn_start_multi_game_Click;
             // 
             // MultiPlayerForm
             // 

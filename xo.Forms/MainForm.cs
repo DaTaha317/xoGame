@@ -44,13 +44,13 @@ namespace xo.Forms
 
         private void btn_singlePlayer_Click(object sender, EventArgs e)
         {
-            openChildForm(new SinglePlayerForm());
+            openChildForm(new SinglePlayerForm(this));
             HideSubMenu();
         }
 
         private void btn_multiPlayer_Click(object sender, EventArgs e)
         {
-            openChildForm(new MultiPlayerForm());
+            openChildForm(new MultiPlayerForm(this));
             HideSubMenu();
         }
 
@@ -76,8 +76,8 @@ namespace xo.Forms
         #endregion
 
         #region Forms Navigation
-        private Form activeForm = null;
-        private void openChildForm(Form childFrom)
+        public Form activeForm = null;
+        public void openChildForm(Form childFrom)
         {
             if (activeForm != null) activeForm.Close();
 

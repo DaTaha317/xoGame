@@ -12,9 +12,16 @@ namespace xo.Forms
 {
     public partial class MultiPlayerForm : Form
     {
-        public MultiPlayerForm()
+        private MainForm parentForm;
+        public MultiPlayerForm(MainForm parentForm)
         {
             InitializeComponent();
+            this.parentForm = parentForm;
+        }
+
+        private void btn_start_multi_game_Click(object sender, EventArgs e)
+        {
+            parentForm.openChildForm(new GameBoard());
         }
     }
 }

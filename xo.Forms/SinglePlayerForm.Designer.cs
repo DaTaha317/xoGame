@@ -50,6 +50,7 @@
             btn_start_single_game.TabIndex = 8;
             btn_start_single_game.Text = "Start Game";
             btn_start_single_game.UseVisualStyleBackColor = false;
+            btn_start_single_game.Click += btn_start_single_game_Click;
             // 
             // gb_player
             // 
