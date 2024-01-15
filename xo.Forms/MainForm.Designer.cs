@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             pnl_SideMenu = new Panel();
             btn_exit = new Button();
             btn_about = new Button();
@@ -37,8 +38,11 @@
             btn_singlePlayer = new Button();
             btn_mode = new Button();
             pnl_logo = new Panel();
+            logo = new PictureBox();
             pnl_SideMenu.SuspendLayout();
             pnl_mode_options.SuspendLayout();
+            pnl_logo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)logo).BeginInit();
             SuspendLayout();
             // 
             // pnl_SideMenu
@@ -53,7 +57,7 @@
             pnl_SideMenu.Dock = DockStyle.Left;
             pnl_SideMenu.Location = new Point(0, 0);
             pnl_SideMenu.Name = "pnl_SideMenu";
-            pnl_SideMenu.Size = new Size(250, 553);
+            pnl_SideMenu.Size = new Size(193, 553);
             pnl_SideMenu.TabIndex = 0;
             // 
             // btn_exit
@@ -66,7 +70,7 @@
             btn_exit.Location = new Point(0, 319);
             btn_exit.Name = "btn_exit";
             btn_exit.Padding = new Padding(5, 0, 0, 0);
-            btn_exit.Size = new Size(250, 45);
+            btn_exit.Size = new Size(193, 45);
             btn_exit.TabIndex = 5;
             btn_exit.Text = "Exit";
             btn_exit.TextAlign = ContentAlignment.MiddleLeft;
@@ -82,7 +86,7 @@
             btn_about.Location = new Point(0, 274);
             btn_about.Name = "btn_about";
             btn_about.Padding = new Padding(5, 0, 0, 0);
-            btn_about.Size = new Size(250, 45);
+            btn_about.Size = new Size(193, 45);
             btn_about.TabIndex = 4;
             btn_about.Text = "About";
             btn_about.TextAlign = ContentAlignment.MiddleLeft;
@@ -98,7 +102,7 @@
             btn_scores.Location = new Point(0, 229);
             btn_scores.Name = "btn_scores";
             btn_scores.Padding = new Padding(5, 0, 0, 0);
-            btn_scores.Size = new Size(250, 45);
+            btn_scores.Size = new Size(193, 45);
             btn_scores.TabIndex = 3;
             btn_scores.Text = "Scores";
             btn_scores.TextAlign = ContentAlignment.MiddleLeft;
@@ -112,7 +116,7 @@
             pnl_mode_options.Dock = DockStyle.Top;
             pnl_mode_options.Location = new Point(0, 144);
             pnl_mode_options.Name = "pnl_mode_options";
-            pnl_mode_options.Size = new Size(250, 85);
+            pnl_mode_options.Size = new Size(193, 85);
             pnl_mode_options.TabIndex = 2;
             // 
             // btn_multiPlayer
@@ -125,7 +129,7 @@
             btn_multiPlayer.Location = new Point(0, 40);
             btn_multiPlayer.Name = "btn_multiPlayer";
             btn_multiPlayer.Padding = new Padding(30, 0, 0, 0);
-            btn_multiPlayer.Size = new Size(250, 40);
+            btn_multiPlayer.Size = new Size(193, 40);
             btn_multiPlayer.TabIndex = 1;
             btn_multiPlayer.Text = "Multiplayer";
             btn_multiPlayer.TextAlign = ContentAlignment.MiddleLeft;
@@ -142,7 +146,7 @@
             btn_singlePlayer.Location = new Point(0, 0);
             btn_singlePlayer.Name = "btn_singlePlayer";
             btn_singlePlayer.Padding = new Padding(30, 0, 0, 0);
-            btn_singlePlayer.Size = new Size(250, 40);
+            btn_singlePlayer.Size = new Size(193, 40);
             btn_singlePlayer.TabIndex = 0;
             btn_singlePlayer.Text = "Single Player";
             btn_singlePlayer.TextAlign = ContentAlignment.MiddleLeft;
@@ -159,7 +163,7 @@
             btn_mode.Location = new Point(0, 99);
             btn_mode.Name = "btn_mode";
             btn_mode.Padding = new Padding(5, 0, 0, 0);
-            btn_mode.Size = new Size(250, 45);
+            btn_mode.Size = new Size(193, 45);
             btn_mode.TabIndex = 1;
             btn_mode.Text = "Play";
             btn_mode.TextAlign = ContentAlignment.MiddleLeft;
@@ -169,11 +173,22 @@
             // pnl_logo
             // 
             pnl_logo.BackColor = Color.FromArgb(11, 7, 17);
+            pnl_logo.Controls.Add(logo);
             pnl_logo.Dock = DockStyle.Top;
             pnl_logo.Location = new Point(0, 0);
             pnl_logo.Name = "pnl_logo";
-            pnl_logo.Size = new Size(250, 99);
+            pnl_logo.Size = new Size(193, 99);
             pnl_logo.TabIndex = 0;
+            // 
+            // logo
+            // 
+            logo.Image = (Image)resources.GetObject("logo.Image");
+            logo.Location = new Point(31, 14);
+            logo.Name = "logo";
+            logo.Size = new Size(117, 79);
+            logo.SizeMode = PictureBoxSizeMode.Zoom;
+            logo.TabIndex = 0;
+            logo.TabStop = false;
             // 
             // MainForm
             // 
@@ -181,10 +196,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(932, 553);
             Controls.Add(pnl_SideMenu);
+            MinimumSize = new Size(950, 600);
             Name = "MainForm";
             Text = "MainForm";
             pnl_SideMenu.ResumeLayout(false);
             pnl_mode_options.ResumeLayout(false);
+            pnl_logo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)logo).EndInit();
             ResumeLayout(false);
         }
 
@@ -199,5 +217,6 @@
         private Button btn_exit;
         private Button btn_about;
         private Button btn_scores;
+        private PictureBox logo;
     }
 }
