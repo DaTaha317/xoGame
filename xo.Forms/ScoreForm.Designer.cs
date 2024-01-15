@@ -34,6 +34,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(194, 174, 208);
             ClientSize = new Size(739, 489);
             Name = "ScoreForm";
             Text = "ScoreForm";

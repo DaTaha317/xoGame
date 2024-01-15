@@ -221,6 +221,7 @@
             // 
             // lbl_welcome
             // 
+            lbl_welcome.Anchor = AnchorStyles.None;
             lbl_welcome.AutoSize = true;
             lbl_welcome.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbl_welcome.Location = new Point(226, 378);
@@ -231,6 +232,7 @@
             // 
             // logo_welcomeForm
             // 
+            logo_welcomeForm.Anchor = AnchorStyles.None;
             logo_welcomeForm.Image = (Image)resources.GetObject("logo_welcomeForm.Image");
             logo_welcomeForm.Location = new Point(167, 53);
             logo_welcomeForm.Name = "logo_welcomeForm";

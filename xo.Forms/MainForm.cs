@@ -44,20 +44,19 @@ namespace xo.Forms
 
         private void btn_singlePlayer_Click(object sender, EventArgs e)
         {
-            openChildForm(new SinglePlayer());
+            openChildForm(new SinglePlayerForm());
             HideSubMenu();
         }
 
         private void btn_multiPlayer_Click(object sender, EventArgs e)
         {
-            // code
-
+            openChildForm(new MultiPlayerForm());
             HideSubMenu();
         }
 
         private void btn_scores_Click(object sender, EventArgs e)
         {
-            // code
+            openChildForm(new ScoreForm());
             HideSubMenu();
         }
 
