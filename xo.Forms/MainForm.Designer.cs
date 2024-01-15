@@ -38,11 +38,17 @@
             btn_singlePlayer = new Button();
             btn_mode = new Button();
             pnl_logo = new Panel();
-            logo = new PictureBox();
+            logo_sideMenu = new PictureBox();
+            pnl_footer = new Panel();
+            pnl_childForm = new Panel();
+            lbl_welcome = new Label();
+            logo_welcomeForm = new PictureBox();
             pnl_SideMenu.SuspendLayout();
             pnl_mode_options.SuspendLayout();
             pnl_logo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)logo).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)logo_sideMenu).BeginInit();
+            pnl_childForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)logo_welcomeForm).BeginInit();
             SuspendLayout();
             // 
             // pnl_SideMenu
@@ -75,6 +81,7 @@
             btn_exit.Text = "Exit";
             btn_exit.TextAlign = ContentAlignment.MiddleLeft;
             btn_exit.UseVisualStyleBackColor = true;
+            btn_exit.Click += btn_exit_Click;
             // 
             // btn_about
             // 
@@ -91,6 +98,7 @@
             btn_about.Text = "About";
             btn_about.TextAlign = ContentAlignment.MiddleLeft;
             btn_about.UseVisualStyleBackColor = true;
+            btn_about.Click += btn_about_Click;
             // 
             // btn_scores
             // 
@@ -107,6 +115,7 @@
             btn_scores.Text = "Scores";
             btn_scores.TextAlign = ContentAlignment.MiddleLeft;
             btn_scores.UseVisualStyleBackColor = true;
+            btn_scores.Click += btn_scores_Click;
             // 
             // pnl_mode_options
             // 
@@ -173,28 +182,70 @@
             // pnl_logo
             // 
             pnl_logo.BackColor = Color.FromArgb(11, 7, 17);
-            pnl_logo.Controls.Add(logo);
+            pnl_logo.Controls.Add(logo_sideMenu);
             pnl_logo.Dock = DockStyle.Top;
             pnl_logo.Location = new Point(0, 0);
             pnl_logo.Name = "pnl_logo";
             pnl_logo.Size = new Size(193, 99);
             pnl_logo.TabIndex = 0;
             // 
-            // logo
+            // logo_sideMenu
             // 
-            logo.Image = (Image)resources.GetObject("logo.Image");
-            logo.Location = new Point(31, 14);
-            logo.Name = "logo";
-            logo.Size = new Size(117, 79);
-            logo.SizeMode = PictureBoxSizeMode.Zoom;
-            logo.TabIndex = 0;
-            logo.TabStop = false;
+            logo_sideMenu.Image = (Image)resources.GetObject("logo_sideMenu.Image");
+            logo_sideMenu.Location = new Point(39, 14);
+            logo_sideMenu.Name = "logo_sideMenu";
+            logo_sideMenu.Size = new Size(117, 79);
+            logo_sideMenu.SizeMode = PictureBoxSizeMode.Zoom;
+            logo_sideMenu.TabIndex = 0;
+            logo_sideMenu.TabStop = false;
+            // 
+            // pnl_footer
+            // 
+            pnl_footer.BackColor = Color.FromArgb(50, 19, 71);
+            pnl_footer.Dock = DockStyle.Bottom;
+            pnl_footer.Location = new Point(193, 489);
+            pnl_footer.Name = "pnl_footer";
+            pnl_footer.Size = new Size(739, 64);
+            pnl_footer.TabIndex = 1;
+            // 
+            // pnl_childForm
+            // 
+            pnl_childForm.BackColor = Color.FromArgb(194, 174, 208);
+            pnl_childForm.Controls.Add(lbl_welcome);
+            pnl_childForm.Controls.Add(logo_welcomeForm);
+            pnl_childForm.Dock = DockStyle.Fill;
+            pnl_childForm.Location = new Point(193, 0);
+            pnl_childForm.Name = "pnl_childForm";
+            pnl_childForm.Size = new Size(739, 489);
+            pnl_childForm.TabIndex = 2;
+            // 
+            // lbl_welcome
+            // 
+            lbl_welcome.AutoSize = true;
+            lbl_welcome.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_welcome.Location = new Point(226, 378);
+            lbl_welcome.Name = "lbl_welcome";
+            lbl_welcome.Size = new Size(260, 81);
+            lbl_welcome.TabIndex = 1;
+            lbl_welcome.Text = "XoGame";
+            // 
+            // logo_welcomeForm
+            // 
+            logo_welcomeForm.Image = (Image)resources.GetObject("logo_welcomeForm.Image");
+            logo_welcomeForm.Location = new Point(167, 53);
+            logo_welcomeForm.Name = "logo_welcomeForm";
+            logo_welcomeForm.Size = new Size(373, 311);
+            logo_welcomeForm.SizeMode = PictureBoxSizeMode.Zoom;
+            logo_welcomeForm.TabIndex = 0;
+            logo_welcomeForm.TabStop = false;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(932, 553);
+            Controls.Add(pnl_childForm);
+            Controls.Add(pnl_footer);
             Controls.Add(pnl_SideMenu);
             MinimumSize = new Size(950, 600);
             Name = "MainForm";
@@ -202,7 +253,10 @@
             pnl_SideMenu.ResumeLayout(false);
             pnl_mode_options.ResumeLayout(false);
             pnl_logo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)logo).EndInit();
+            ((System.ComponentModel.ISupportInitialize)logo_sideMenu).EndInit();
+            pnl_childForm.ResumeLayout(false);
+            pnl_childForm.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)logo_welcomeForm).EndInit();
             ResumeLayout(false);
         }
 
@@ -217,6 +271,10 @@
         private Button btn_exit;
         private Button btn_about;
         private Button btn_scores;
-        private PictureBox logo;
+        private PictureBox logo_sideMenu;
+        private Panel pnl_footer;
+        private Panel pnl_childForm;
+        private PictureBox logo_welcomeForm;
+        private Label lbl_welcome;
     }
 }

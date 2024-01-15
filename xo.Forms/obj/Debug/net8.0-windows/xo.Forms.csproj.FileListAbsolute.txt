@@ -21,7 +21,6 @@ D:\ITI Benha\10. Advanced C#\xoGame\xo.Forms\bin\Debug\net8.0-windows\xo.Forms.d
 D:\ITI Benha\10. Advanced C#\xoGame\xo.Forms\bin\Debug\net8.0-windows\xo.Forms.runtimeconfig.json
 D:\ITI Benha\10. Advanced C#\xoGame\xo.Forms\bin\Debug\net8.0-windows\xo.Forms.dll
 D:\ITI Benha\10. Advanced C#\xoGame\xo.Forms\bin\Debug\net8.0-windows\xo.Forms.pdb
-D:\ITI Benha\10. Advanced C#\xoGame\xo.Forms\obj\Debug\net8.0-windows\xo.Forms.BoardForm.resources
 D:\ITI Benha\10. Advanced C#\xoGame\xo.Forms\obj\Debug\net8.0-windows\xo.Forms.MainForm.resources
 D:\ITI Benha\10. Advanced C#\xoGame\xo.Forms\obj\Debug\net8.0-windows\xo.Forms.ScoreForm.resources
 D:\ITI Benha\10. Advanced C#\xoGame\xo.Forms\obj\Debug\net8.0-windows\xo.Forms.csproj.GenerateResource.cache
@@ -36,3 +35,4 @@ D:\ITI Benha\10. Advanced C#\xoGame\xo.Forms\obj\Debug\net8.0-windows\xo.Forms.p
 D:\ITI Benha\10. Advanced C#\xoGame\xo.Forms\obj\Debug\net8.0-windows\xo.Forms.genruntimeconfig.cache
 D:\ITI Benha\10. Advanced C#\xoGame\xo.Forms\obj\Debug\net8.0-windows\ref\xo.Forms.dll
 D:\ITI Benha\10. Advanced C#\xoGame\xo.Forms\obj\Debug\net8.0-windows\xo.Forms.Properties.Resources.resources
+D:\ITI Benha\10. Advanced C#\xoGame\xo.Forms\obj\Debug\net8.0-windows\xo.Forms.SinglePlayer.resources

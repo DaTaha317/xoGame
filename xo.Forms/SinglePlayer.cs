@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace xo.Forms
 {
-    public partial class BoardForm : Form
+    public partial class SinglePlayer : Form
     {
-        public BoardForm()
+        public SinglePlayer()
         {
             InitializeComponent();
         }
