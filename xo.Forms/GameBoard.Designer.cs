@@ -47,7 +47,7 @@
             btn_12 = new Button();
             btn_22 = new Button();
             btn_13 = new Button();
-            button8 = new Button();
+            btn_23 = new Button();
             pnl_up_buttons.SuspendLayout();
             pnl_score.SuspendLayout();
             t_pnl_board.SuspendLayout();
@@ -109,6 +109,7 @@
             btn_newGame.TabIndex = 0;
             btn_newGame.Text = "New Game";
             btn_newGame.UseVisualStyleBackColor = true;
+            btn_newGame.Click += btn_newGame_Click;
             // 
             // pnl_score
             // 
@@ -194,7 +195,7 @@
             t_pnl_board.Controls.Add(btn_12, 1, 0);
             t_pnl_board.Controls.Add(btn_22, 1, 1);
             t_pnl_board.Controls.Add(btn_13, 2, 0);
-            t_pnl_board.Controls.Add(button8, 2, 1);
+            t_pnl_board.Controls.Add(btn_23, 2, 1);
             t_pnl_board.Location = new Point(179, 128);
             t_pnl_board.Name = "t_pnl_board";
             t_pnl_board.RowCount = 3;
@@ -214,6 +215,7 @@
             btn_31.Size = new Size(110, 112);
             btn_31.TabIndex = 3;
             btn_31.UseVisualStyleBackColor = true;
+            btn_31.Click += button_clicked;
             // 
             // btn_32
             // 
@@ -224,6 +226,7 @@
             btn_32.Size = new Size(110, 112);
             btn_32.TabIndex = 2;
             btn_32.UseVisualStyleBackColor = true;
+            btn_32.Click += button_clicked;
             // 
             // btn_33
             // 
@@ -234,6 +237,7 @@
             btn_33.Size = new Size(112, 112);
             btn_33.TabIndex = 1;
             btn_33.UseVisualStyleBackColor = true;
+            btn_33.Click += button_clicked;
             // 
             // btn_11
             // 
@@ -244,6 +248,7 @@
             btn_11.Size = new Size(110, 110);
             btn_11.TabIndex = 0;
             btn_11.UseVisualStyleBackColor = true;
+            btn_11.Click += button_clicked;
             // 
             // btn_21
             // 
@@ -254,6 +259,7 @@
             btn_21.Size = new Size(110, 110);
             btn_21.TabIndex = 4;
             btn_21.UseVisualStyleBackColor = true;
+            btn_21.Click += button_clicked;
             // 
             // btn_12
             // 
@@ -264,6 +270,7 @@
             btn_12.Size = new Size(110, 110);
             btn_12.TabIndex = 5;
             btn_12.UseVisualStyleBackColor = true;
+            btn_12.Click += button_clicked;
             // 
             // btn_22
             // 
@@ -274,6 +281,7 @@
             btn_22.Size = new Size(110, 110);
             btn_22.TabIndex = 6;
             btn_22.UseVisualStyleBackColor = true;
+            btn_22.Click += button_clicked;
             // 
             // btn_13
             // 
@@ -284,16 +292,18 @@
             btn_13.Size = new Size(112, 110);
             btn_13.TabIndex = 7;
             btn_13.UseVisualStyleBackColor = true;
+            btn_13.Click += button_clicked;
             // 
-            // button8
+            // btn_23
             // 
-            button8.Dock = DockStyle.Fill;
-            button8.Font = new Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button8.Location = new Point(235, 119);
-            button8.Name = "button8";
-            button8.Size = new Size(112, 110);
-            button8.TabIndex = 8;
-            button8.UseVisualStyleBackColor = true;
+            btn_23.Dock = DockStyle.Fill;
+            btn_23.Font = new Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_23.Location = new Point(235, 119);
+            btn_23.Name = "btn_23";
+            btn_23.Size = new Size(112, 110);
+            btn_23.TabIndex = 8;
+            btn_23.UseVisualStyleBackColor = true;
+            btn_23.Click += button_clicked;
             // 
             // GameBoard
             // 
@@ -334,6 +344,6 @@
         private Button btn_12;
         private Button btn_22;
         private Button btn_13;
-        private Button button8;
+        private Button btn_23;
     }
 }
