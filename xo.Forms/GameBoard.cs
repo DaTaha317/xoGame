@@ -74,12 +74,28 @@ namespace xo.Forms
             turn = true;
             turn_count = 0;
 
-            foreach(Control c in t_pnl_board.Controls)
+            foreach (Control c in t_pnl_board.Controls)
             {
                 Button btn = c as Button;
                 btn.Enabled = true;
                 btn.Text = "";
             }
+        }
+
+        private void button_enter(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            if (btn.Enabled)
+            {
+                if (turn) btn.Text = "X";
+                else btn.Text = "O";
+            }
+        }
+
+        private void button_leave(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            if (btn.Enabled) btn.Text = "";
         }
 
         #endregion
@@ -93,6 +109,8 @@ namespace xo.Forms
                 btn.Enabled = false;
             }
         }
+
         #endregion
+
     }
 }

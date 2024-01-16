@@ -216,6 +216,8 @@
             btn_31.TabIndex = 3;
             btn_31.UseVisualStyleBackColor = true;
             btn_31.Click += button_clicked;
+            btn_31.MouseEnter += button_enter;
+            btn_31.MouseLeave += button_leave;
             // 
             // btn_32
             // 
@@ -227,6 +229,8 @@
             btn_32.TabIndex = 2;
             btn_32.UseVisualStyleBackColor = true;
             btn_32.Click += button_clicked;
+            btn_32.MouseEnter += button_enter;
+            btn_32.MouseLeave += button_leave;
             // 
             // btn_33
             // 
@@ -238,6 +242,8 @@
             btn_33.TabIndex = 1;
             btn_33.UseVisualStyleBackColor = true;
             btn_33.Click += button_clicked;
+            btn_33.MouseEnter += button_enter;
+            btn_33.MouseLeave += button_leave;
             // 
             // btn_11
             // 
@@ -249,6 +255,8 @@
             btn_11.TabIndex = 0;
             btn_11.UseVisualStyleBackColor = true;
             btn_11.Click += button_clicked;
+            btn_11.MouseEnter += button_enter;
+            btn_11.MouseLeave += button_leave;
             // 
             // btn_21
             // 
@@ -260,6 +268,8 @@
             btn_21.TabIndex = 4;
             btn_21.UseVisualStyleBackColor = true;
             btn_21.Click += button_clicked;
+            btn_21.MouseEnter += button_enter;
+            btn_21.MouseLeave += button_leave;
             // 
             // btn_12
             // 
@@ -271,6 +281,8 @@
             btn_12.TabIndex = 5;
             btn_12.UseVisualStyleBackColor = true;
             btn_12.Click += button_clicked;
+            btn_12.MouseEnter += button_enter;
+            btn_12.MouseLeave += button_leave;
             // 
             // btn_22
             // 
@@ -282,6 +294,8 @@
             btn_22.TabIndex = 6;
             btn_22.UseVisualStyleBackColor = true;
             btn_22.Click += button_clicked;
+            btn_22.MouseEnter += button_enter;
+            btn_22.MouseLeave += button_leave;
             // 
             // btn_13
             // 
@@ -293,6 +307,8 @@
             btn_13.TabIndex = 7;
             btn_13.UseVisualStyleBackColor = true;
             btn_13.Click += button_clicked;
+            btn_13.MouseEnter += button_enter;
+            btn_13.MouseLeave += button_leave;
             // 
             // btn_23
             // 
@@ -304,6 +320,8 @@
             btn_23.TabIndex = 8;
             btn_23.UseVisualStyleBackColor = true;
             btn_23.Click += button_clicked;
+            btn_23.MouseEnter += button_enter;
+            btn_23.MouseLeave += button_leave;
             // 
             // GameBoard
             // 
