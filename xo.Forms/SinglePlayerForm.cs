@@ -12,7 +12,7 @@ namespace xo.Forms
 
         private void btn_start_single_game_Click(object sender, EventArgs e)
         {
-            parentForm.openChildForm(new GameBoard());
+            parentForm.openChildForm(new GameBoard(this));
         }
     }
 }

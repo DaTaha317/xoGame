@@ -12,9 +12,21 @@ namespace xo.Forms
 {
     public partial class GameBoard : Form
     {
-        public GameBoard()
+        private SinglePlayerForm singlePlayer;
+        private MultiPlayerForm multiPlayer;
+        private bool singlePlayerMode;
+        public GameBoard(SinglePlayerForm singlePlayer)
         {
             InitializeComponent();
+            this.singlePlayer = singlePlayer;
+            singlePlayerMode = true;
+        }
+
+        public GameBoard(MultiPlayerForm multiPlayer)
+        {
+            InitializeComponent();
+            this.multiPlayer = multiPlayer;
+            singlePlayerMode = false;
         }
 
         #region Game Code
@@ -68,9 +80,9 @@ namespace xo.Forms
 
             checkForWinner();
 
-            // Code for single player
-            ComputerTimer.Start();
-            // Code for single player
+            // Game Mode
+            if (singlePlayerMode) ComputerTimer.Start();
+
         }
 
         private void btn_newGame_Click(object sender, EventArgs e)
