@@ -20,10 +20,10 @@ namespace xo.Forms
         #region Game Code
         bool turn = true; // true = X turn , false = O turn 
         int turn_count = 0;
+        bool gameOver = false;
 
         private void checkForWinner()
         {
-            bool gameOver = false;
 
             // Horizontal Checks
             if ((btn_11.Text == btn_12.Text) && (btn_12.Text == btn_13.Text) && !btn_11.Enabled) gameOver = true;
@@ -67,10 +67,16 @@ namespace xo.Forms
             turn_count++;
 
             checkForWinner();
+
+            // Code for single player
+            ComputerTimer.Start();
+            // Code for single player
         }
 
         private void btn_newGame_Click(object sender, EventArgs e)
         {
+            ComputerTimer.Stop();
+            gameOver = false;
             turn = true;
             turn_count = 0;
 
@@ -98,6 +104,30 @@ namespace xo.Forms
             if (btn.Enabled) btn.Text = "";
         }
 
+        private void ComputerTurn(object sender, EventArgs e)
+        {
+            List<Button> buttons = GetButtons();
+            if (!gameOver)
+            {
+                int randomIndex = 0;
+                do
+                {
+                    Random random = new Random();
+                    randomIndex = random.Next(buttons.Count);
+
+                }
+                while (!buttons[randomIndex].Enabled);
+
+                buttons[randomIndex].Text = "O";
+                buttons[randomIndex].Enabled = false;
+                turn_count++;
+                turn = !turn;
+
+                checkForWinner();
+                ComputerTimer.Stop();
+            }
+        }
+
         #endregion
 
         #region Helper Methods
@@ -108,6 +138,17 @@ namespace xo.Forms
                 Button btn = c as Button;
                 btn.Enabled = false;
             }
+        }
+
+        private List<Button> GetButtons()
+        {
+            List<Button> buttons = new List<Button>();
+            foreach(Control c in t_pnl_board.Controls)
+            {
+                Button btn = c as Button;
+                buttons.Add(btn);
+            }
+            return buttons;
         }
 
         #endregion

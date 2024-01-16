@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             pnl_up_buttons = new Panel();
             btn_saveScores = new Button();
             btn_reset = new Button();
@@ -48,6 +49,7 @@
             btn_22 = new Button();
             btn_13 = new Button();
             btn_23 = new Button();
+            ComputerTimer = new System.Windows.Forms.Timer(components);
             pnl_up_buttons.SuspendLayout();
             pnl_score.SuspendLayout();
             t_pnl_board.SuspendLayout();
@@ -323,6 +325,11 @@
             btn_23.MouseEnter += button_enter;
             btn_23.MouseLeave += button_leave;
             // 
+            // ComputerTimer
+            // 
+            ComputerTimer.Interval = 1000;
+            ComputerTimer.Tick += ComputerTurn;
+            // 
             // GameBoard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -363,5 +370,6 @@
         private Button btn_22;
         private Button btn_13;
         private Button btn_23;
+        private System.Windows.Forms.Timer ComputerTimer;
     }
 }
