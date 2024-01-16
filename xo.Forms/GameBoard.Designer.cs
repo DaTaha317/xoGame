@@ -38,8 +38,19 @@
             lbl_player2 = new Label();
             lbl_player1 = new Label();
             lbl_score = new Label();
+            t_pnl_board = new TableLayoutPanel();
+            btn_31 = new Button();
+            btn_32 = new Button();
+            btn_33 = new Button();
+            btn_11 = new Button();
+            btn_21 = new Button();
+            btn_12 = new Button();
+            btn_22 = new Button();
+            btn_13 = new Button();
+            button8 = new Button();
             pnl_up_buttons.SuspendLayout();
             pnl_score.SuspendLayout();
+            t_pnl_board.SuspendLayout();
             SuspendLayout();
             // 
             // pnl_up_buttons
@@ -168,12 +179,129 @@
             lbl_score.TabIndex = 0;
             lbl_score.Text = "Score";
             // 
+            // t_pnl_board
+            // 
+            t_pnl_board.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            t_pnl_board.ColumnCount = 3;
+            t_pnl_board.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.33333F));
+            t_pnl_board.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333359F));
+            t_pnl_board.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333359F));
+            t_pnl_board.Controls.Add(btn_31, 0, 2);
+            t_pnl_board.Controls.Add(btn_32, 0, 2);
+            t_pnl_board.Controls.Add(btn_33, 0, 2);
+            t_pnl_board.Controls.Add(btn_11, 0, 0);
+            t_pnl_board.Controls.Add(btn_21, 0, 1);
+            t_pnl_board.Controls.Add(btn_12, 1, 0);
+            t_pnl_board.Controls.Add(btn_22, 1, 1);
+            t_pnl_board.Controls.Add(btn_13, 2, 0);
+            t_pnl_board.Controls.Add(button8, 2, 1);
+            t_pnl_board.Location = new Point(179, 128);
+            t_pnl_board.Name = "t_pnl_board";
+            t_pnl_board.RowCount = 3;
+            t_pnl_board.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
+            t_pnl_board.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
+            t_pnl_board.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
+            t_pnl_board.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            t_pnl_board.Size = new Size(350, 350);
+            t_pnl_board.TabIndex = 2;
+            // 
+            // btn_31
+            // 
+            btn_31.Dock = DockStyle.Fill;
+            btn_31.Font = new Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_31.Location = new Point(3, 235);
+            btn_31.Name = "btn_31";
+            btn_31.Size = new Size(110, 112);
+            btn_31.TabIndex = 3;
+            btn_31.UseVisualStyleBackColor = true;
+            // 
+            // btn_32
+            // 
+            btn_32.Dock = DockStyle.Fill;
+            btn_32.Font = new Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_32.Location = new Point(119, 235);
+            btn_32.Name = "btn_32";
+            btn_32.Size = new Size(110, 112);
+            btn_32.TabIndex = 2;
+            btn_32.UseVisualStyleBackColor = true;
+            // 
+            // btn_33
+            // 
+            btn_33.Dock = DockStyle.Fill;
+            btn_33.Font = new Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_33.Location = new Point(235, 235);
+            btn_33.Name = "btn_33";
+            btn_33.Size = new Size(112, 112);
+            btn_33.TabIndex = 1;
+            btn_33.UseVisualStyleBackColor = true;
+            // 
+            // btn_11
+            // 
+            btn_11.Dock = DockStyle.Fill;
+            btn_11.Font = new Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_11.Location = new Point(3, 3);
+            btn_11.Name = "btn_11";
+            btn_11.Size = new Size(110, 110);
+            btn_11.TabIndex = 0;
+            btn_11.UseVisualStyleBackColor = true;
+            // 
+            // btn_21
+            // 
+            btn_21.Dock = DockStyle.Fill;
+            btn_21.Font = new Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_21.Location = new Point(3, 119);
+            btn_21.Name = "btn_21";
+            btn_21.Size = new Size(110, 110);
+            btn_21.TabIndex = 4;
+            btn_21.UseVisualStyleBackColor = true;
+            // 
+            // btn_12
+            // 
+            btn_12.Dock = DockStyle.Fill;
+            btn_12.Font = new Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_12.Location = new Point(119, 3);
+            btn_12.Name = "btn_12";
+            btn_12.Size = new Size(110, 110);
+            btn_12.TabIndex = 5;
+            btn_12.UseVisualStyleBackColor = true;
+            // 
+            // btn_22
+            // 
+            btn_22.Dock = DockStyle.Fill;
+            btn_22.Font = new Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_22.Location = new Point(119, 119);
+            btn_22.Name = "btn_22";
+            btn_22.Size = new Size(110, 110);
+            btn_22.TabIndex = 6;
+            btn_22.UseVisualStyleBackColor = true;
+            // 
+            // btn_13
+            // 
+            btn_13.Dock = DockStyle.Fill;
+            btn_13.Font = new Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_13.Location = new Point(235, 3);
+            btn_13.Name = "btn_13";
+            btn_13.Size = new Size(112, 110);
+            btn_13.TabIndex = 7;
+            btn_13.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            button8.Dock = DockStyle.Fill;
+            button8.Font = new Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button8.Location = new Point(235, 119);
+            button8.Name = "button8";
+            button8.Size = new Size(112, 110);
+            button8.TabIndex = 8;
+            button8.UseVisualStyleBackColor = true;
+            // 
             // GameBoard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(194, 174, 208);
             ClientSize = new Size(739, 489);
+            Controls.Add(t_pnl_board);
             Controls.Add(pnl_score);
             Controls.Add(pnl_up_buttons);
             Name = "GameBoard";
@@ -181,6 +309,7 @@
             pnl_up_buttons.ResumeLayout(false);
             pnl_score.ResumeLayout(false);
             pnl_score.PerformLayout();
+            t_pnl_board.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -196,5 +325,15 @@
         private Label lbl_player2_score;
         private Label lbl_player1_score;
         private Label lbl_player2;
+        private TableLayoutPanel t_pnl_board;
+        private Button btn_11;
+        private Button btn_31;
+        private Button btn_32;
+        private Button btn_33;
+        private Button btn_21;
+        private Button btn_12;
+        private Button btn_22;
+        private Button btn_13;
+        private Button button8;
     }
 }
