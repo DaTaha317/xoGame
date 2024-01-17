@@ -20,6 +20,7 @@ namespace xo.Forms
             InitializeComponent();
             this.singlePlayer = singlePlayer;
             singlePlayerMode = true;
+            lbl_player1.Text = singlePlayer.playerName();
         }
 
         public GameBoard(MultiPlayerForm multiPlayer)
@@ -27,6 +28,8 @@ namespace xo.Forms
             InitializeComponent();
             this.multiPlayer = multiPlayer;
             singlePlayerMode = false;
+            lbl_player1.Text = multiPlayer.playerNames()[0];
+            lbl_player2.Text = multiPlayer.playerNames()[1];
         }
 
         #region Game Code

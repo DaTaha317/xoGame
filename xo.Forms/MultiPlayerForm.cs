@@ -21,7 +21,19 @@ namespace xo.Forms
 
         private void btn_start_multi_game_Click(object sender, EventArgs e)
         {
-            parentForm.openChildForm(new GameBoard(this));
+            if (txt_player1_name.Text != "" && txt_player2_name.Text != "")
+                parentForm.openChildForm(new GameBoard(this));
+            else
+                MessageBox.Show("Please enter your names");
+
+        }
+
+        public string[] playerNames()
+        {
+            string[] names = new string[2];
+            names[0] = txt_player1_name.Text;
+            names[1] = txt_player2_name.Text;
+            return names;
         }
     }
 }
