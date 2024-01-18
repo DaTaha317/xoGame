@@ -96,6 +96,7 @@
             btn_reset.TabIndex = 1;
             btn_reset.Text = "Reset";
             btn_reset.UseVisualStyleBackColor = true;
+            btn_reset.Click += btn_reset_Click;
             // 
             // btn_newGame
             // 

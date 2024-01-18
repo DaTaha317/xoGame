@@ -15,6 +15,7 @@ namespace xo.Forms
         private SinglePlayerForm singlePlayer;
         private MultiPlayerForm multiPlayer;
         private bool singlePlayerMode;
+
         public GameBoard(SinglePlayerForm singlePlayer)
         {
             InitializeComponent();
@@ -38,6 +39,8 @@ namespace xo.Forms
         bool turn = true; // true = X turn , false = O turn 
         int turn_count = 0;
         bool gameOver = false;
+        int playerOneScore = 0;
+        int playerTwoScore = 0;
 
         private void checkForWinner()
         {
@@ -60,8 +63,19 @@ namespace xo.Forms
             {
                 disableButtons();
                 string winner = "";
-                if (turn) winner = "O";
-                else winner = "X";
+                if (turn)
+                {
+                    winner = lbl_player2.Text;
+                    playerTwoScore++;
+                    lbl_player2_score.Text = playerTwoScore.ToString();
+                }
+
+                else
+                {
+                    winner = lbl_player1.Text;
+                    playerOneScore++;
+                    lbl_player1_score.Text = playerOneScore.ToString();
+                }
 
                 MessageBox.Show($"The winner is {winner}!!");
             }
@@ -145,6 +159,17 @@ namespace xo.Forms
             }
         }
 
+        private void btn_reset_Click(object sender, EventArgs e)
+        {
+            playerOneScore = 0;
+            lbl_player1_score.Text = playerOneScore.ToString();
+            playerTwoScore = 0;
+            lbl_player2_score.Text = playerTwoScore.ToString();
+
+            btn_newGame_Click(sender, e);
+            
+        }
+
         #endregion
 
         #region Helper Methods
@@ -160,7 +185,7 @@ namespace xo.Forms
         private List<Button> GetButtons()
         {
             List<Button> buttons = new List<Button>();
-            foreach(Control c in t_pnl_board.Controls)
+            foreach (Control c in t_pnl_board.Controls)
             {
                 Button btn = c as Button;
                 buttons.Add(btn);
@@ -178,6 +203,5 @@ namespace xo.Forms
         }
 
         #endregion
-
     }
 }
