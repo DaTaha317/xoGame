@@ -21,6 +21,7 @@ namespace xo.Forms
             this.singlePlayer = singlePlayer;
             singlePlayerMode = true;
             lbl_player1.Text = singlePlayer.playerName();
+            adjustLabelPosition();
         }
 
         public GameBoard(MultiPlayerForm multiPlayer)
@@ -30,6 +31,7 @@ namespace xo.Forms
             singlePlayerMode = false;
             lbl_player1.Text = multiPlayer.playerNames()[0];
             lbl_player2.Text = multiPlayer.playerNames()[1];
+            adjustLabelPosition();
         }
 
         #region Game Code
@@ -164,6 +166,15 @@ namespace xo.Forms
                 buttons.Add(btn);
             }
             return buttons;
+        }
+
+        private void adjustLabelPosition()
+        {
+            int centerP1 = lbl_player1.Left + (lbl_player1.Width - lbl_player1_score.Width) / 2;
+            lbl_player1_score.Location = new Point(centerP1, lbl_player1.Bottom + 2);
+
+            int centerP2 = lbl_player2.Left + (lbl_player2.Width - lbl_player2_score.Width) / 2;
+            lbl_player2_score.Location = new Point(centerP2, lbl_player2.Bottom + 2);
         }
 
         #endregion
