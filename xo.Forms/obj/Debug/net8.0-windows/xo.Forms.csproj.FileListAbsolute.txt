@@ -38,3 +38,4 @@ D:\ITI Benha\10. Advanced C#\xoGame\xo.Forms\obj\Debug\net8.0-windows\xo.Forms.P
 D:\ITI Benha\10. Advanced C#\xoGame\xo.Forms\obj\Debug\net8.0-windows\xo.Forms.MultiPlayerForm.resources
 D:\ITI Benha\10. Advanced C#\xoGame\xo.Forms\obj\Debug\net8.0-windows\xo.Forms.SinglePlayerForm.resources
 D:\ITI Benha\10. Advanced C#\xoGame\xo.Forms\obj\Debug\net8.0-windows\xo.Forms.GameBoard.resources
+D:\ITI Benha\10. Advanced C#\xoGame\xo.Forms\obj\Debug\net8.0-windows\xo.Forms.AboutForm.resources

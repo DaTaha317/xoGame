@@ -62,7 +62,7 @@ namespace xo.Forms
 
         private void btn_about_Click(object sender, EventArgs e)
         {
-            // code 
+            openChildForm(new AboutForm());
             HideSubMenu();
         }
 
