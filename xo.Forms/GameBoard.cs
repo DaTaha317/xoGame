@@ -172,9 +172,19 @@ namespace xo.Forms
                 PlayerTwo = lbl_player2.Text,
                 PlayerTwoScore = int.Parse(lbl_player2_score.Text),
         };
-            
 
-            ScoreService.Insert(game);
+            try
+            {
+                ScoreService.Insert(game);
+                MessageBox.Show("Score has been saved");
+                btn_reset_Click(sender, e);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
         #endregion

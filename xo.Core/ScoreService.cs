@@ -11,14 +11,14 @@ namespace xo.Core
         public static DataTable Select()
         {
             DataTable dt = new DataTable();
-            string selectCmd = "SELECT PlayerOne, PlayerOneScore, PlayerTwo, PlayerTwoScore, Date FROM dbo.score";
+            string selectCmd = "SELECT GameId, PlayerOne, PlayerOneScore, PlayerTwo, PlayerTwoScore, Date FROM dbo.score";
             dt = DbContext.Select(selectCmd, connectionString);
             return dt;
         }
 
         public static int Delete(int id)
         {
-            string deleteCommand = $"";
+            string deleteCommand = $"DELETE FROM dbo.score WHERE GameId = {id}";
 
             int result = DbContext.ExecuteNonQuery(deleteCommand, connectionString);
             return result;

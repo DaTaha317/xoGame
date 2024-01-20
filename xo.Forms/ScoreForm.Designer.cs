@@ -45,6 +45,7 @@
             dgv_score.RowHeadersWidth = 51;
             dgv_score.Size = new Size(739, 418);
             dgv_score.TabIndex = 0;
+            dgv_score.RowHeaderMouseDoubleClick += RowHeaderDblClick;
             // 
             // pnl_score
             // 
@@ -69,6 +70,7 @@
             button1.TabIndex = 0;
             button1.Text = "Delete Score";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += DeleteBtnClick;
             // 
             // ScoreForm
             // 

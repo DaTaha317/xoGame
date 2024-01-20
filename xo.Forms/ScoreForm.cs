@@ -22,6 +22,20 @@ namespace xo.Forms
         private void getScores()
         {
             dgv_score.DataSource = ScoreService.Select();
+            dgv_score.Columns["GameId"].Visible = false;
+        }
+
+        int currentId = 0;
+        private void RowHeaderDblClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            DataGridViewRow row = this.dgv_score.SelectedRows[0];
+            currentId = (int)row.Cells["gameId"].Value;
+        }
+
+        private void DeleteBtnClick(object sender, EventArgs e)
+        {
+            ScoreService.Delete(currentId);
+            getScores();
         }
     }
 }
