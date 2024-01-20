@@ -63,7 +63,7 @@
             pnl_SideMenu.Dock = DockStyle.Left;
             pnl_SideMenu.Location = new Point(0, 0);
             pnl_SideMenu.Name = "pnl_SideMenu";
-            pnl_SideMenu.Size = new Size(193, 553);
+            pnl_SideMenu.Size = new Size(193, 705);
             pnl_SideMenu.TabIndex = 0;
             // 
             // btn_exit
@@ -203,9 +203,9 @@
             // 
             pnl_footer.BackColor = Color.FromArgb(50, 19, 71);
             pnl_footer.Dock = DockStyle.Bottom;
-            pnl_footer.Location = new Point(193, 489);
+            pnl_footer.Location = new Point(193, 641);
             pnl_footer.Name = "pnl_footer";
-            pnl_footer.Size = new Size(739, 64);
+            pnl_footer.Size = new Size(924, 64);
             pnl_footer.TabIndex = 1;
             // 
             // pnl_childForm
@@ -216,7 +216,7 @@
             pnl_childForm.Dock = DockStyle.Fill;
             pnl_childForm.Location = new Point(193, 0);
             pnl_childForm.Name = "pnl_childForm";
-            pnl_childForm.Size = new Size(739, 489);
+            pnl_childForm.Size = new Size(924, 641);
             pnl_childForm.TabIndex = 2;
             // 
             // lbl_welcome
@@ -224,7 +224,7 @@
             lbl_welcome.Anchor = AnchorStyles.None;
             lbl_welcome.AutoSize = true;
             lbl_welcome.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbl_welcome.Location = new Point(226, 378);
+            lbl_welcome.Location = new Point(319, 469);
             lbl_welcome.Name = "lbl_welcome";
             lbl_welcome.Size = new Size(260, 81);
             lbl_welcome.TabIndex = 1;
@@ -234,7 +234,7 @@
             // 
             logo_welcomeForm.Anchor = AnchorStyles.None;
             logo_welcomeForm.Image = (Image)resources.GetObject("logo_welcomeForm.Image");
-            logo_welcomeForm.Location = new Point(167, 53);
+            logo_welcomeForm.Location = new Point(260, 144);
             logo_welcomeForm.Name = "logo_welcomeForm";
             logo_welcomeForm.Size = new Size(373, 311);
             logo_welcomeForm.SizeMode = PictureBoxSizeMode.Zoom;
@@ -245,11 +245,11 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(932, 553);
+            ClientSize = new Size(1117, 705);
             Controls.Add(pnl_childForm);
             Controls.Add(pnl_footer);
             Controls.Add(pnl_SideMenu);
-            MinimumSize = new Size(950, 600);
+            MinimumSize = new Size(1135, 752);
             Name = "MainForm";
             Text = "MainForm";
             pnl_SideMenu.ResumeLayout(false);

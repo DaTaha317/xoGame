@@ -28,8 +28,15 @@ namespace xo.Forms
         int currentId = 0;
         private void RowHeaderDblClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            DataGridViewRow row = this.dgv_score.SelectedRows[0];
-            currentId = (int)row.Cells["gameId"].Value;
+            try
+            {
+                DataGridViewRow row = this.dgv_score.SelectedRows[0];
+                currentId = (int)row.Cells["gameId"].Value;
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
 
         private void DeleteBtnClick(object sender, EventArgs e)
