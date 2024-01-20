@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using xo.Core;
 
 namespace xo.Forms
 {
@@ -15,6 +16,12 @@ namespace xo.Forms
         public ScoreForm()
         {
             InitializeComponent();
+            getScores();
+        }
+
+        private void getScores()
+        {
+            dgv_score.DataSource = ScoreService.Select();
         }
     }
 }

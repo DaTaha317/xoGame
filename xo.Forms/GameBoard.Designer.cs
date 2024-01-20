@@ -81,6 +81,7 @@
             btn_saveScores.TabIndex = 2;
             btn_saveScores.Text = "Save Score";
             btn_saveScores.UseVisualStyleBackColor = true;
+            btn_saveScores.Click += btn_saveScores_Click;
             // 
             // btn_reset
             // 

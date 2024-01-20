@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using xo.Core.Models;
+using xo.Core;
 
 namespace xo.Forms
 {
@@ -167,7 +160,21 @@ namespace xo.Forms
             lbl_player2_score.Text = playerTwoScore.ToString();
 
             btn_newGame_Click(sender, e);
+
+        }
+
+        private void btn_saveScores_Click(object sender, EventArgs e)
+        {
+            Game game = new Game()
+            {
+                PlayerOne = lbl_player1.Text,
+                PlayerOneScore = int.Parse(lbl_player1_score.Text),
+                PlayerTwo = lbl_player2.Text,
+                PlayerTwoScore = int.Parse(lbl_player2_score.Text),
+        };
             
+
+            ScoreService.Insert(game);
         }
 
         #endregion
@@ -203,5 +210,6 @@ namespace xo.Forms
         }
 
         #endregion
+
     }
 }

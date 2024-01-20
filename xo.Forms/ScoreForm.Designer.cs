@@ -37,13 +37,13 @@
             // 
             // dgv_score
             // 
+            dgv_score.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgv_score.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgv_score.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv_score.Dock = DockStyle.Fill;
-            dgv_score.Location = new Point(0, 0);
+            dgv_score.Location = new Point(0, 71);
             dgv_score.Name = "dgv_score";
             dgv_score.RowHeadersWidth = 51;
-            dgv_score.Size = new Size(739, 489);
+            dgv_score.Size = new Size(739, 418);
             dgv_score.TabIndex = 0;
             // 
             // pnl_score
@@ -58,7 +58,7 @@
             // 
             // button1
             // 
-            button1.Dock = DockStyle.Fill;
+            button1.Dock = DockStyle.Top;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
