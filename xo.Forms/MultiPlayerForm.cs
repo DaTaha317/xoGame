@@ -21,10 +21,10 @@ namespace xo.Forms
 
         private void btn_start_multi_game_Click(object sender, EventArgs e)
         {
-            if (txt_player1_name.Text != "" && txt_player2_name.Text != "")
+            if (txt_player1_name.Text != "" && txt_player2_name.Text != "" && (rb_player1_x.Checked || rb_player1_o.Checked))
                 parentForm.openChildForm(new GameBoard(this));
             else
-                MessageBox.Show("Please enter your names");
+                MessageBox.Show("Please enter your names & your X and O choice");
 
         }
 
@@ -34,6 +34,32 @@ namespace xo.Forms
             names[0] = txt_player1_name.Text;
             names[1] = txt_player2_name.Text;
             return names;
+        }
+
+        public bool getRadioChoice()
+        {
+            if (rb_player1_x.Checked) return true;
+            else return false;
+        }
+
+        private void radioClickedX1(object sender, EventArgs e)
+        {
+            rb_player2_o.Checked = true;
+        }
+
+        private void radioClickO1(object sender, EventArgs e)
+        {
+            rb_player2_x.Checked = true;
+        }
+
+        private void radioClickX2(object sender, EventArgs e)
+        {
+            rb_player1_o.Checked = true;
+        }
+
+        private void radioClickO2(object sender, EventArgs e)
+        {
+            rb_player1_x.Checked = true;
         }
     }
 }

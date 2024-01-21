@@ -1,5 +1,6 @@
 ﻿using xo.Core.Models;
 using xo.Core;
+using System.Diagnostics.Eventing.Reader;
 
 namespace xo.Forms
 {
@@ -23,8 +24,19 @@ namespace xo.Forms
             InitializeComponent();
             this.multiPlayer = multiPlayer;
             singlePlayerMode = false;
-            lbl_player1.Text = multiPlayer.playerNames()[0];
-            lbl_player2.Text = multiPlayer.playerNames()[1];
+
+            if (multiPlayer.getRadioChoice())
+            {
+                lbl_player1.Text = multiPlayer.playerNames()[0];
+                lbl_player2.Text = multiPlayer.playerNames()[1];
+            }
+            else
+            {
+                lbl_player1.Text = multiPlayer.playerNames()[1];
+                lbl_player2.Text = multiPlayer.playerNames()[0];
+            }
+
+            
             adjustLabelPosition();
         }
 

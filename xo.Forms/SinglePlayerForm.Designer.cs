@@ -44,7 +44,7 @@
             btn_start_single_game.FlatStyle = FlatStyle.Flat;
             btn_start_single_game.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_start_single_game.ForeColor = SystemColors.Control;
-            btn_start_single_game.Location = new Point(220, 340);
+            btn_start_single_game.Location = new Point(304, 393);
             btn_start_single_game.Name = "btn_start_single_game";
             btn_start_single_game.Size = new Size(287, 70);
             btn_start_single_game.TabIndex = 8;
@@ -58,9 +58,9 @@
             gb_player.Controls.Add(txt_player_name);
             gb_player.Controls.Add(lbl_name);
             gb_player.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            gb_player.Location = new Point(191, 112);
+            gb_player.Location = new Point(142, 165);
             gb_player.Name = "gb_player";
-            gb_player.Size = new Size(335, 144);
+            gb_player.Size = new Size(619, 144);
             gb_player.TabIndex = 6;
             gb_player.TabStop = false;
             gb_player.Text = "Player";
@@ -69,7 +69,7 @@
             // 
             txt_player_name.Location = new Point(112, 54);
             txt_player_name.Name = "txt_player_name";
-            txt_player_name.Size = new Size(199, 43);
+            txt_player_name.Size = new Size(452, 43);
             txt_player_name.TabIndex = 3;
             // 
             // lbl_name
@@ -87,7 +87,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(194, 174, 208);
-            ClientSize = new Size(739, 489);
+            ClientSize = new Size(906, 594);
             Controls.Add(btn_start_single_game);
             Controls.Add(gb_player);
             Name = "SinglePlayerForm";
